@@ -7,7 +7,7 @@ const Collection = () => {
     <div className='min-w-60' >
 
     <div>
-    <p className=''> FILTERS</p>
+    <p className='text-2xl font-medium'> FILTERS</p>
 
     </div>
     
