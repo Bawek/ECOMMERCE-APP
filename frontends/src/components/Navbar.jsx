@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import { NavLink } from "react-router-dom";
+import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
+  const {setShowSearch,GetCount}=useContext(ShopContext)
+
   const [visible, setVisible] = useState(false);
   return (
     <div className="flex items-center justify-between py-5 font-medium">
@@ -32,6 +35,7 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         <img
           src={assets.search_icon}
+          onClick={()=>setShowSearch(true)}
           className="w-5 cursor-pointer"
           alt="..."
         />
@@ -58,8 +62,8 @@ const Navbar = () => {
             className="w-5 min-w-5 "
             alt="menu_Icon"
           />
-          <p className="w-4 absolute right-[-5px] text-center bottom-[-5px] text-white bg-black rounded-full leading-4 text-[8px] aspect-square">
-            0
+          <p className="w-4 absolute right-[-5px] text-center bottom-[-5px] text-sm text-white bg-black rounded-full leading-4 text-[8px] aspect-square">
+           {GetCount()}
           </p>
         </NavLink>
 
