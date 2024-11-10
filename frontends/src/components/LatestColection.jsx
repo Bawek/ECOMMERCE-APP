@@ -6,7 +6,6 @@ import ProductItem from './ProductItem';
 const LatestCollection = () => {
   const products = useContext(ShopContext); // Get products from context
   const product=products.products;
-  console.log((products));
   const [latestProduct, setLatestProduct] = useState([]);
   
 

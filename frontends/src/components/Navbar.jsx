@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
@@ -42,11 +42,11 @@ const Navbar = () => {
 
         {/* Profile Icon with Dropdown */}
         <div className="relative group flex items-center gap-4">
-          <img
+         <Link to="/login"><img
             src={assets.profile_icon}
             className="w-5 cursor-pointer"
             alt="..."
-          />
+          /></Link> 
 
           {/* Dropdown menu */}
           <div className="absolute right-0 mt-2 w-36 py-2 px-4 bg-slate-100 text-gray-600 hidden pointer-events-none group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out">

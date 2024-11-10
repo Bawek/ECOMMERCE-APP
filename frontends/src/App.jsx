@@ -17,7 +17,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
   return (
-    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] flex-col justify-center">
+    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] flex-col justify-center  bg-green-100">
    <ToastContainer/>
     <Navbar/>
 
@@ -29,6 +29,7 @@ const App = () => {
     <Route path="/products/:productId" element={<Product />} />    <Route path="/Cart" element={<Cart/>}/>
     <Route path="/place-order" element={<PlaceOrder/> }/>
     <Route path="/order" element={<Order/>}/>
+    <Route  path="/carts" element={<Cart/>}/>
 
 
 

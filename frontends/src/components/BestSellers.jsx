@@ -6,7 +6,6 @@ import { ShopContext } from '../context/ShopContext';
 const BestSellers = () => {
     const products = useContext(ShopContext); // Get products from context
     const product=products.products;
-    console.log((products));
     const [latestProduct, setLatestProduct] = useState([]);
     
   
