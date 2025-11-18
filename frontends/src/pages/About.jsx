@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../components/Title";
-import { assets } from "../assets/frontend_assets/assets";
+import baw from "../assets/frontend_assets/baw.jpg";
 import NewsletterBox from "../components/NewsletterBox";
 
 const About = () => {
@@ -13,14 +13,14 @@ const About = () => {
       <div className="flex flex-col md:flex-row gap-10">
         <div>
           <img
-            src={assets.about_img}
-            alt="About Forever Brand Image"
+            src={baw}
+            alt="About Baw Brand Image"
             className="w-full h-auto object-cover"
           />
         </div>
         <div className="flex flex-col gap-7 text-sm text-gray-700">
           <p className="leading-relaxed">
-            Forever was born out of a passion for innovation and a desire to
+          Abysinia Ecommerce  was born out of a passion for innovation and a desire to
             revolutionize the way people shop online. Our journey began with a
             simple idea: to provide a platform where customers can easily
             discover, explore, and purchase a wide range of products from the
@@ -35,7 +35,7 @@ const About = () => {
           </p>
           <p className="font-medium text-2xl text-gray-800">Our Mission</p>
           <p className="leading-relaxed">
-            Our mission at Forever is to empower customers with choice,
+            Our mission at Abysinia Ecommerce is to empower customers with choice,
             convenience, and confidence. We are dedicated to providing a
             seamless shopping experience that exceeds expectations, from
             browsing and ordering to delivery and beyond.
