@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "../assets/frontend_assets/assets";
+import baw from '../assets/frontend_assets/baw.jpg'
 
 const Hero = () => {
   return (
@@ -8,16 +8,16 @@ const Hero = () => {
         <div className="flex flex-col text-gray-700">
           <div className="flex justify-center items-center gap-3">
             <p className="w-8 md:w-11 h-[1px] bg-gray-700 ml-3"></p>
-            <p className="">Our best sellers</p>
+            <p className="">Good news</p>
           </div>
-          <h1>Latest Arivals</h1>
+          <h1>Customer</h1>
           <div className="flex justify-center items-center gap-3">
             <p className="">Shop now</p>
             <p className="w-8 md:w-11 h-[1px] bg-gray-700 mr-3"></p>
           </div>
         </div>
       </div>
-      <img src={assets.hero_img} className="w-full sm:w-1/2"/>
+      <img src={baw} className="w-full sm:w-1/2"/>
     </div>
   );
 };

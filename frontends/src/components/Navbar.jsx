@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import { Link, NavLink } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
+import baw from '../assets/frontend_assets/baw.jpg'
+
 
 const Navbar = () => {
   const {setShowSearch,GetCount}=useContext(ShopContext)
@@ -10,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-5 font-medium">
       <NavLink to={`/`}>
-        <img src={assets.logo} className="w-36" alt="..." />{" "}
+        <img src={baw} className="w-36" alt="nav logo" />{" "}
       </NavLink>
 
       <ul className="hidden sm:flex text-sm items-center justify-center gap-4">

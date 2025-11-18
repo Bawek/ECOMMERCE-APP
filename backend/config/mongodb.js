@@ -6,12 +6,13 @@ const mongoDb = async () => {
   
 
     // MongoDB Atlas Connection string with a database name
-    const dbURI = "mongodb+srv://Baweke:hDjbRmLfXig7pMJY@cluster0.xio5e.mongodb.net/myDatabaseName?retryWrites=true&w=majority";
 
     // Establish the connection to MongoDB Atlas
-    await mongoose.connect(process.env.MONGODB_URL_OFFLINE);
+    // await mongoose.connect(process.env.MONGODB_URL_OFFLINE);
+    await mongoose.connect(process.env.MONGODB_URL);
+    
 
-    // Event listener for successful connection
+    // Event listener for successful connenction
     mongoose.connection.on('connected', () => {
       console.log("MongoDB connected successfully");
     });

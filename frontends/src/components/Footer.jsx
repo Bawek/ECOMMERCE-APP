@@ -1,19 +1,17 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { assets } from '../assets/frontend_assets/assets'
+import baw from '../assets/frontend_assets/baw.jpg'
 
 const Footer = () => {
   return (<div className='items-center '>
     <div className='flex flex-col p-3 sm:grid grid-cols-[3fr_1fr_1fr]'>
     <NavLink to={`/`} className='max-w-50 py-10'>
       
-      <img src={assets.logo} className="w-36 p-2" alt="..." />  <p>In this HTML tutorial, you will find more than
-       200 examples. With our online editor, you can edit and test each example yourself!
-
-
-HTML Exercises
-Many chapters in this tutorial end with an exercise where you can
- check your level of knowledge.</p>   </NavLink>
+      <img src={baw} className="w-36 p-2"  alt="footer Logo" loading='lazy'/>  <p>This is a full-stack e-commerce application 
+        I created to allow users to buy and sell products online. It features user authentication, 
+        product management, shopping cart, and checkout functionality.
+         The app is fully responsive and provides a clean, modern interface 
+         for both buyers and sellers.</p>   </NavLink>
 
 <div className='p-10 '>
 <h1 className='text-2xl font-medium'>Company</h1>
@@ -54,7 +52,7 @@ Many chapters in this tutorial end with an exercise where you can
 </div>
 
 <div className='text-center text-sm font-medium mb-3 pb-2s'>
-<p>Copyright 2024@ greatstack.dev - All Right Reserved.</p>
+<p>Copyright 2024@baweke - All Right Reserved.</p>
 </div>
 </div>
   )
